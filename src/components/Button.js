@@ -17,7 +17,7 @@ const SIZES = ['btn--medium','btn--large']
             <button className={`btn ${checkbuttonStyle} ${checkbuttonSize}`} onclick={onclick} type={type}>
                 {children}
             </button>
-            <button>Get Started</button>
+           
         </Link>
     )
 }
