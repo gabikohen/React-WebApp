@@ -13,11 +13,14 @@ const SIZES = ['btn--medium','btn--large']
     const checkbuttonSize = SIZES.includes(buttonSize) ? buttonSize :SIZES[1];
 
     return (
-        <Link to='/sing-up' className='btn-mobile'>
-            <button className={`btn ${checkbuttonStyle} ${checkbuttonSize}`} onclick={onclick} type={type}>
+        <>
+        <Link to='/sign-up' className='btn-mobile'>
+            <button className={`btn ${checkbuttonStyle} ${checkbuttonSize}`} onClick={onclick} type={type}>
                 {children}
             </button>
            
         </Link>
+             
+           </>
     )
 }
